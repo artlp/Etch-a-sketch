@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-a=Sketch</title>
+    <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="flex divleft"></div>
-        <div class="flex divcenter"></div>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Etch-a-Sketch</h1>
+            <div class="flex divcenter"></div>
+        </div>
+        <div class="flex controls">
+            <div class="leftflex"><label for="colorPicker">Color picker</label></div>
+            <div class="rightflex"><input type="color" name="" id="colorPicker"></div>
+            <br>
+            <div class="leftflex"><label for="randomColor">Random color mode</label></div>
+            <div class="rightflex"><input type="checkbox" name="" id="randomColor"></div>
+            <br>
+            <div class="leftflex"><label for="clearButton">Reset</label></div>
+            <div class="rightflex"><input type="button" id="resetButton" value="Reset"></div>
+            <br>
+            <div class="leftflex"><label for="canvasSize">Canvas size</label></div>
+            <div class="rightflex"><input type="range" name="" id="canvasSize" value="24" min="12" max="64"></div>
+            <br>
+            <div class="leftflex"><label for="toggleGrid">Show grid</label></div>
+            <div class="rightflex"><input type="checkbox" name="" id="toggleGrid" checked></div>
+        </div>
     </div>
 </body>
 </html>
+
+
