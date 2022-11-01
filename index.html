@@ -11,6 +11,7 @@
     </head>
 
     <body>
+        <div class="bg"></div>
         <div class="wrapper">
             <div class="container">
                 <h1>Etch-a-Sketch</h1>
@@ -19,21 +20,23 @@
             <div class="controls">
                 <div class="leftflex"><label for="colorPicker">Color picker</label>
 
-                    <label for="randomColor">Random color mode</label>
+                    <input type="checkbox" name="" id="randomColor"><label for="randomColor">Random color </label>
+                    <input type="checkbox" name="" id="toggleGrid" checked>
                     <label for="toggleGrid">Show grid</label>
-                    <label for="clearButton">Reset</label>
+                    <input type="button" id="resetButton" value="Reset">
+                    <label for="resetButton">Reset</label>
                     <label for="canvasSize">Canvas size</label>
                 </div>
                 <div class="rightflex">
                     <div class="input"><input type="color" name="" id="colorPicker"></div>
-                    <div class="input"><input type="checkbox" name="" id="randomColor"></div>
-                    <div class="input"><input type="checkbox" name="" id="toggleGrid" checked></div>
-                    <div class="input"><input type="button" id="resetButton" value="Reset"></div>
+                    <div class="input"></div>
+                    <div class="input"></div>
+                    <div class="input"></div>
                     <div class="input"><input type="range" name="" id="canvasSize" value="24" min="12" max="64"></div>
                 </div>
             </div>
         </div>
-        </div>
+        <a href="https://github.com/artlp">Made by artlp</a>
     </body>
 
 </html>
