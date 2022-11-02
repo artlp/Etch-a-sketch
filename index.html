@@ -16,27 +16,54 @@
             <div class="container">
                 <h1>Etch-a-Sketch</h1>
                 <div class="divcenter"></div>
-            </div>
-            <div class="controls">
-                <div class="leftflex"><label for="colorPicker">Color picker</label>
+                <div class="newcontrols">
+                    <div id="left-controller">
+                        <div id="big-size-square"></div>
+                        <div>
+                            <div id="color-controller" class="round-controller outer-sh"><input type="color"
+                                    id="hiddencolor" />
+                                <div class="colordisplay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="midbuttons">
+                        
+                        <input type="checkbox" name="" id="randomColor"><label for="randomColor">Random color </label>
+                        <input type="checkbox" name="" id="toggleGrid" checked>
+                        <label for="toggleGrid">Show grid</label>
+                        <input type="button" id="resetButton" value="Reset">
+                        <label for="resetButton">Reset</label>
 
-                    <input type="checkbox" name="" id="randomColor"><label for="randomColor">Random color </label>
-                    <input type="checkbox" name="" id="toggleGrid" checked>
-                    <label for="toggleGrid">Show grid</label>
-                    <input type="button" id="resetButton" value="Reset">
-                    <label for="resetButton">Reset</label>
-                    <label for="canvasSize">Canvas size</label>
+
+
+                    </div>
+                    
+                    <div id="right-controller">
+                            <div id="size-controller" class="round-controller outer-sh">
+                            </div>
+                            <div class="infodisplay"><span id="gridSize">16</span></div>
+
+                        </div>
+                    </div>
+                    <input type="range" name="" id="canvasSize2" class="hidden" value="24" min="12" max="64" step="4">
                 </div>
-                <div class="rightflex">
-                    <div class="input"><input type="color" name="" id="colorPicker"></div>
-                    <div class="input"></div>
-                    <div class="input"></div>
-                    <div class="input"></div>
-                    <div class="input"><input type="range" name="" id="canvasSize" value="24" min="12" max="64"></div>
+                <div class="controls">
+                    <div class="leftflex"><label for="colorPicker">Color picker</label>
+
+                       
+                        <label for="canvasSize">Canvas size</label>
+                    </div>
+                    <div class="rightflex">
+                        <div class="input"><input type="color" name="" id="colorPicker"></div>
+                        <div class="input"></div>
+                        <div class="input"></div>
+                        <div class="input"></div>
+                        <div class="input"><input type="range" name="" id="canvasSize" value="24" min="12" max="64" step="4">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <a href="https://github.com/artlp">Made by artlp</a>
+            <a href="https://github.com/artlp">Made by artlp</a>
     </body>
 
 </html>
