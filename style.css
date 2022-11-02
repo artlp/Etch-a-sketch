@@ -48,7 +48,18 @@ h1 {
     max-width: 700px;
     margin: 0 auto;
 }
-
+.grid {
+    box-sizing: border-box;
+    display:inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.grid:hover {
+    background-color: rgba(128, 128, 128, 0.146);
+}
 .divcenter {
     aspect-ratio: 1/1;
     background-color: white;
@@ -57,7 +68,6 @@ h1 {
     display: grid;
     height: auto;
     width: 95%;
-    z-index: 1;
     margin: 0 auto;
 }
 h1:hover {
@@ -93,19 +103,7 @@ input:not(:checked)+label[for="resetButton"]::after {
     display:none;
     /* opacity: 0.4; */
 }
-.grid {
-    box-sizing: border-box;
-    display:inline-block;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    z-index: 1;
-}
-.grid:hover {
-    background-color: rgba(128, 128, 128, 0.146);
-}
+
 .togglegrid {
     border: 1px solid rgba(128, 128, 128, 0.094);
 }
@@ -125,16 +123,6 @@ input:not(:checked)+label[for="resetButton"]::after {
 .hidden {
     display:none;
 }
-
-#canvasSize2 {
-    position: relative;
-    z-index: 1;
-    width: 80px;
-    left: 36%;
-    margin:0;
-    padding: 0;
-}
-
 /* !KNOB */
 
 .round-controller{

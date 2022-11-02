@@ -1,7 +1,6 @@
 const canvasSize2 = document.querySelector('#canvasSize2');
 const divCenter = document.querySelector('.divcenter');
 const btnReset = document.querySelector('#resetButton');
-// const colorPicker = document.querySelector('#colorPicker');
 const colorPicker = document.querySelector('#hiddencolor');
 let pixels = document.querySelectorAll(".grid");
 let color = colorPicker.value;
@@ -71,8 +70,6 @@ function generateGrid() {
     });
 }
 
-
-
 document.addEventListener('mousedown', startPainting);
 document.addEventListener('mouseup', stopPainting);
 function startPainting() {
@@ -81,8 +78,6 @@ function startPainting() {
 function stopPainting() {
     draw = 0;
 }
-
-
 function paint(e) {
     if (draw === 1) {
         if (random.checked === true) {
@@ -98,14 +93,11 @@ function paint(e) {
 
     }
 }
-
 function paint2(e) {
     console.log(e.type);
         e.target.style.backgroundColor = `${color}`;
 
     }
-
-
 btnReset.addEventListener('click', () => {
     pixels.forEach((e) => {
         e.style.backgroundColor = "white";
