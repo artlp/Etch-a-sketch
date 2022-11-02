@@ -1,4 +1,3 @@
-const canvasSize = document.querySelector('#canvasSize');
 const canvasSize2 = document.querySelector('#canvasSize2');
 const divCenter = document.querySelector('.divcenter');
 const btnReset = document.querySelector('#resetButton');
@@ -18,7 +17,6 @@ function changeColor() {
 }
 
 btnGridSize.addEventListener('click', () => {
-    canvasSize.classList.toggle("hidden");
     canvasSize2.classList.toggle("hidden");
 })
 
@@ -29,7 +27,6 @@ toggleGrid.addEventListener('change', () => {
     
 })
 
-displaySize.innerText = +canvasSize.value;
 displaySize.innerText = +canvasSize2.value;
 
 random.addEventListener('click', () => {
@@ -48,13 +45,10 @@ function randomColor() {
 }
 
 generateGrid()
-canvasSize.addEventListener('change', generateGrid);
 canvasSize2.addEventListener('change', generateGrid);
 
 function generateGrid() {
     divCenter.innerHTML = '';
-    gridSize = +canvasSize.value;
-    displaySize.innerText = +canvasSize.value;
     gridSize = +canvasSize2.value;
     displaySize.innerText = +canvasSize2.value;
 
